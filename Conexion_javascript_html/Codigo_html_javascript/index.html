@@ -8,6 +8,7 @@
 <meta http-equiv="refresh" content="400">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type ="text/javascript" src="javascript.js"></script>
+<link rel="stylesheet" href="style.css">
 <title>Práctica en Casa</title>
 </head>
 <body>
@@ -19,23 +20,31 @@
     <br>
     <br>
     <h3 id="demo"></h3>
-    
-    <input id="id1" type="number" min="-10000" max="300000000" required>
-    <input id="id2" type="number" min="-10000" max="300000000" required>
-    <input type="button" value= "Sumar" onclick="console.log(`El Resultado de la Suma es:  ${sumar(10,20)}`);"></button>
-    <input type="button" value= "Restar" onclick="console.log(`El Resultado de la Resta es:  ${Restar(10,20)}`);"></button>
-    <input type="button" value= "Multiplicar" onclick="console.log(`El Resultado de la Multiplicación es:  ${Multiplicar(10,20)}`);"></button>
-    <input type="button" value= "Dividir" onclick="console.log(`El Resultado de la División es:  ${Dividir(10,20)}`);"></button>
-    <input type="button" value= "Módulo" onclick="console.log(`El Resultado del Módulo  es:  ${Módulo(10,20)}`);"></button>
-    <input type="button" value= "Potencia" onclick="console.log(`El Resultado de la Potenciacia es:  ${Potencia(10,20)}`);"></button>
-    <br>
-
+    <label for="">Ingresa un número</label>
+    <input id="id1" type="number" min="-10000" max="300000000" required><br><br><br>
+		<label for="">Ingresa otro número</label>
+		<input id="id2" type="number" min="-10000" max="300000000" required>
+    <br><br></BR><BR></BR>
+		
+		<label for=""><B>CALCULO DE OPERACIONES</B></label><BR></BR><BR>
+		<input type="button" value= "Sumar" onclick="console.log(`El Resultado de la Suma es:  ${sumar(10,20)}`);"></button>
     <p>El Resultado de la Suma es: <spam id ="resulta"></spam></p>
-    <p>El Resultado de la Resta es: <spam id ="resulta1"></spam></p>
-    <p>El Resultado de la Multiplicación es: <spam id ="resulta2"></spam></p>
-    <p>El Resultado de la División es: <spam id ="resulta3"></spam></p>
+		<input type="button" value= "Restar" onclick="console.log(`El Resultado de la Resta es:  ${Restar(10,20)}`);"></button>
+		<p>El Resultado de la Resta es: <spam id ="resulta1"></spam></p>
+		<input type="button" value= "Multiplicar" onclick="console.log(`El Resultado de la Multiplicación es:  ${Multiplicar(10,20)}`);"></button>
+  	<p>El Resultado de la Multiplicación es: <spam id ="resulta2"></spam></p>
+		<input type="button" value= "Dividir" onclick="console.log(`El Resultado de la División es:  ${Dividir(10,20)}`);"></button>
+		<p>El Resultado de la División es: <spam id ="resulta3"></spam></p>
+		<input type="button" value= "Módulo" onclick="console.log(`El Resultado del Módulo  es:  ${Módulo(10,20)}`);"></button>
     <p>El Resultado de la Módulo es: <spam id ="resulta4"></spam></p>
-    <p>El Resultado de la Potencia es: <spam id ="resulta5"></spam></p>
+		<input type="button" value= "Potencia" onclick="console.log(`El Resultado de la Potenciacia es:  ${Potencia(10,20)}`);"></button>
+    <br>   <p>El Resultado de la Potencia es: <spam id ="resulta5"></spam></p>
+
+    
+    
+   
+    
+ 
     
     <script>
     function resultado() {

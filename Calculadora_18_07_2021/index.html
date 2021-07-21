@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="main.js"></script>
+	<link rel="shortcut icon" href="img\logo_colfiltes_completo_24S_icon_2.ico" type="image/x-icon">
+	<title>Calculadora</title>
+</head>
+<body>
+<h3>Calculadora Básica</h3>
+
+<input type="text" id="n1" placeholder="Escriba un número"><br><br>
+<input type="text" id="n2" placeholder="Escriba otro número"><br><br>
+
+<button id="suma">+</button>
+<button id="resta">-</button>
+<button id="multiplicación">*</button>
+<button id="división">/</button>
+<br><br>
+<button id="Calcular">Calcular</button>
+<br><br>
+<label for=""> <h3>El Resultado es: </h3></label>
+<output id="r"> </output>
+
+
+
+<script>
+
+let op;
+
+document.querySelector('#suma').addEventListener('click',()=> {op='+';});
+
+document.querySelector('#resta').addEventListener('click',()=> {
+    op='-';},true);
+document.querySelector('#multiplicación').addEventListener('click',()=> {
+    op='*';});
+document.querySelector('#división').addEventListener('click',()=> {
+    op='/';});
+
+document.querySelector('#Calcular').addEventListener('click', ()=> {
+    const n1=parseInt(document.querySelector('#n1').value);
+    const n2=parseInt(document.querySelector('#n2').value);
+    // const op=(document.querySelector('#op').value);
+
+    let r=0;
+
+    if (op=='+'){
+        r=n1+n2;
+    }else if (op=='-'){
+        r=n1-n2;
+    }else if (op=='*'){
+        r=n1*n2;
+    }else if (op=='/'){
+        r=n1/n2;
+    }
+console.log(r);
+document.querySelector('#r').innerHTML=r.toFixed(2);
+});
+</script>
+
+</body>
+</html>
